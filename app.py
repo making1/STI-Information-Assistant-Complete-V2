@@ -62,7 +62,7 @@ def extract(t):
  o["durations"]=re.findall(r'\b\d+\s*(?:days?|weeks?|months?|siku|wiki|mwezi|miezi)\b',x); return o
 def log(s,a,act,typ,oid="",d=""):s.add(Audit(actor=a,action=act,object_type=typ,object_id=str(oid),details=d))
 boot(); st.set_page_config(page_title="STI Information Assistant",page_icon="🩺",layout="wide")
-st.title("STI Information Assistant"); st.caption("Educational/research prototype — not a diagnostic or prescribing system.")
+st.title("STI Information Assistant"); st.caption("An STI Educational Chatbot and not a diagnostic or prescribing system.")
 mode=st.sidebar.radio("Open",["Learner assistant","Admin"])
 if mode=="Learner assistant":
  lang=st.selectbox("Language / Lugha",[("English","en"),("Kiswahili","sw")],format_func=lambda z:z[0])[1]
