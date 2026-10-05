@@ -1,0 +1,14 @@
+README.md	930 bytes
+app.py	10216 bytes
+data/content_seed.csv	2510 bytes
+data/intent_training.csv	1035 bytes
+docs/CONTENT_REVIEW_CHECKLIST.md	363 bytes
+evaluation/confusion_matrix.csv	229 bytes
+evaluation/metrics.json	1344 bytes
+models/intent_model.joblib	9993 bytes
+privacy_policy.md	319 bytes
+requirements.txt	89 bytes
+run_linux_mac.sh	123 bytes
+run_windows.bat	101 bytes
+sti_app.db	24576 bytes
+train_model.py	1404 bytes
