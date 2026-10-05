@@ -1,0 +1,67 @@
+{
+  "accuracy": 0.0,
+  "macro_f1": 0.0,
+  "weighted_f1": 0.0,
+  "n_training": 18,
+  "n_test": 6,
+  "classes": [
+    "general_information",
+    "prevention",
+    "symptom_inquiry",
+    "testing",
+    "transmission",
+    "treatment"
+  ],
+  "classification_report": {
+    "general_information": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "prevention": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "symptom_inquiry": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "testing": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "transmission": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "treatment": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1.0
+    },
+    "accuracy": 0.0,
+    "macro avg": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "weighted avg": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    }
+  },
+  "warning": "Small demo dataset: metrics verify the prototype pipeline and are not research-grade validation."
+}

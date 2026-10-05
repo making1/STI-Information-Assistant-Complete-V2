@@ -1,0 +1,25 @@
+text,intent
+What are STIs?,general_information
+Tell me about sexually transmitted infections,general_information
+STI ni nini?,general_information
+Nieleze kuhusu magonjwa ya zinaa,general_information
+How is gonorrhoea spread?,transmission
+Can I get an STI through sex?,transmission
+Kisonono huambukizwaje?,transmission
+Magonjwa ya zinaa yanaambukizwaje?,transmission
+Where can I test for gonorrhoea?,testing
+When should I get an STI test?,testing
+Nipime kisonono lini?,testing
+Naweza kupima STI wapi?,testing
+How can I prevent gonorrhoea?,prevention
+How do condoms reduce STI risk?,prevention
+Ninawezaje kujikinga na kisonono?,prevention
+Nijikinge vipi na magonjwa ya zinaa?,prevention
+I have burning when urinating,symptom_inquiry
+I have yellow genital discharge,symptom_inquiry
+Ninaungua nikikojoa,symptom_inquiry
+Nina uchafu usio wa kawaida sehemu za siri,symptom_inquiry
+How is gonorrhoea treated?,treatment
+Can an STI be treated?,treatment
+Kisonono hutibiwaje?,treatment
+Je STI inaweza kutibiwa?,treatment

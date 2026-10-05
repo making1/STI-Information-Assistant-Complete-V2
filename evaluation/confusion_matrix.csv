@@ -1,0 +1,7 @@
+,general_information,prevention,symptom_inquiry,testing,transmission,treatment
+general_information,0,0,0,1,0,0
+prevention,0,0,0,0,1,0
+symptom_inquiry,1,0,0,0,0,0
+testing,0,0,0,0,1,0
+transmission,1,0,0,0,0,0
+treatment,0,0,0,1,0,0
