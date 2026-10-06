@@ -62,13 +62,13 @@ def extract(t):
  o["durations"]=re.findall(r'\b\d+\s*(?:days?|weeks?|months?|siku|wiki|mwezi|miezi)\b',x); return o
 def log(s,a,act,typ,oid="",d=""):s.add(Audit(actor=a,action=act,object_type=typ,object_id=str(oid),details=d))
 boot(); st.set_page_config(page_title="STI Information Assistant",page_icon="🩺",layout="wide")
-st.title("STI Information Assistant"); st.caption("An STI Educational Chatbot and not a diagnostic or prescribing system.")
+st.title("STI Information Assistant"); st.caption("This is an STI Educational Chatbot and not a diagnostic or prescribing system.")
 mode=st.sidebar.radio("Open",["Learner assistant","Admin"])
 if mode=="Learner assistant":
  lang=st.selectbox("Language / Lugha",[("English","en"),("Kiswahili","sw")],format_func=lambda z:z[0])[1]
- st.info("Do not enter identifying information. Symptoms alone cannot confirm an STI." if lang=="en" else "Usiweke taarifa zinazokutambulisha. Dalili pekee haziwezi kuthibitisha STI.")
+ st.info("Do not enter your identifying information. Symptoms alone cannot confirm an STI." if lang=="en" else "Usiweke taarifa zako ambazo zinakutambulisha. Dalili pekee haziwezi kuthibitisha STI.")
  q=st.text_area("Ask an STI education question" if lang=="en" else "Uliza swali la elimu kuhusu STI",height=120)
- consent=st.checkbox("I consent to storing a redacted copy for prototype evaluation." if lang=="en" else "Ninakubali nakala iliyofichwa taarifa binafsi ihifadhiwe kwa tathmini ya mfano huu.")
+ consent=st.checkbox("I consent to storing a redacted copy for model evaluation." if lang=="en" else "Ninakubali nakala iliyofichwa taarifa binafsi ihifadhiwe kwa tathmini ya mfano huu.")
  if st.button("Process question" if lang=="en" else "Chambua swali",type="primary") and q.strip():
   m=model(); intent=m.predict([q])[0] if m else "general_information"; e=extract(q); st.subheader("NLP extraction"); st.json({"intent":intent,"entities":e})
   s=Session(); topic=e["topics"][0] if e["topics"] else "general"; items=s.query(Content).filter_by(topic=topic,language=lang,status="approved").all()
