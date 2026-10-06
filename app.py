@@ -97,7 +97,7 @@ else:
   t1,t2,t3,t4,t5,t6=st.tabs(["Review content","Create content","Approved content","Audit log","Privacy / retention","Account"])
   with t1:
    s=Session(); pending=s.query(Content).filter_by(status="pending_review").order_by(Content.id).all()
-   st.caption("Approval must be performed by an actual qualified reviewer. The application does not manufacture expert approval.")
+   st.caption("Approval must be performed by an actual qualified reviewer. The application does not generate expert approval.")
    for c in pending:
     with st.expander(f"#{c.id} [{c.language}] {c.title}"):
      st.write(c.body);st.caption(f"{c.source} | v{c.version}");rv=st.text_input("Reviewer name / role",key=f"r{c.id}");a,b=st.columns(2)
